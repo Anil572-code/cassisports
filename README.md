@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the local URL shown in your terminal after `npm run dev` starts to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
@@ -31,6 +31,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push this repository to GitHub (or GitLab/Bitbucket).
+2. Go to https://vercel.com/new and import the repository.
+3. Confirm the settings:
+   - Framework Preset: **Next.js**
+   - Root Directory: **/**
+   - Build Command: **npm run build**
+   - Output Directory: **.next** (auto-detected)
+   - Install Command: **npm install**
+4. Click **Deploy**. Vercel will build and host the production site.
