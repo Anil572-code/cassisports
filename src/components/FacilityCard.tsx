@@ -18,7 +18,7 @@ export default function FacilityCard({
   href = "/contact",
 }: FacilityCardProps) {
   return (
-    <article className="bg-white rounded-2xl overflow-hidden shadow-md card-hover group border border-gray-100">
+    <article className="bg-white rounded-2xl overflow-hidden shadow-md card-hover group border border-gray-100 flex flex-col h-full">
       {/* Image Placeholder */}
       <div className={`relative h-48 ${gradient} flex items-center justify-center overflow-hidden`}>
         <span className="text-6xl filter drop-shadow-lg group-hover:scale-110 transition-transform duration-300">
@@ -28,12 +28,12 @@ export default function FacilityCard({
       </div>
 
       {/* Content */}
-      <div className="p-5">
-        <h3 className="text-lg font-bold text-gray-900 mb-2">{title}</h3>
-        <p className="text-gray-600 text-sm leading-relaxed mb-4">{description}</p>
+      <div className="p-6 flex flex-col flex-1">
+        <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">{title}</h3>
+        <p className="text-gray-600 text-sm leading-relaxed mb-5">{description}</p>
 
         {/* Features */}
-        <ul className="space-y-1.5 mb-5">
+        <ul className="space-y-2 mb-6">
           {features.map((feature) => (
             <li key={feature} className="flex items-center gap-2 text-sm text-gray-700">
               <svg
@@ -54,7 +54,7 @@ export default function FacilityCard({
           ))}
         </ul>
 
-        <Link href={href} className="btn-primary text-sm w-full">
+        <Link href={href} className="btn-primary text-sm w-full mt-auto">
           Book Now
         </Link>
       </div>

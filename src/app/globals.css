@@ -18,23 +18,27 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 bg-brand-orange text-white font-semibold rounded-lg transition-all duration-300 hover:bg-orange-600 hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2;
+    @apply inline-flex items-center justify-center px-6 py-3.5 bg-brand-orange text-white font-semibold rounded-lg shadow-sm transition-all duration-300 hover:bg-orange-600 hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2;
   }
 
   .btn-outline-teal {
-    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-brand-teal text-brand-teal font-semibold rounded-lg transition-all duration-300 hover:bg-brand-teal hover:text-white hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-brand-teal focus:ring-offset-2;
+    @apply inline-flex items-center justify-center px-6 py-3.5 border-2 border-brand-teal text-brand-teal font-semibold rounded-lg transition-all duration-300 hover:bg-brand-teal hover:text-white hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-brand-teal focus:ring-offset-2;
+  }
+
+  .btn-outline-amber {
+    @apply inline-flex items-center justify-center px-6 py-3.5 border-2 border-amber-400 text-amber-400 font-semibold rounded-lg transition-all duration-300 hover:bg-amber-400 hover:text-slate-900 hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2;
   }
 
   .section-heading {
-    @apply text-3xl md:text-4xl font-bold text-gray-900 mb-4;
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight tracking-tight text-balance;
   }
 
   .section-subheading {
-    @apply text-lg text-gray-600 max-w-2xl mx-auto;
+    @apply text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed text-balance;
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl;
   }
 
   .gradient-placeholder {
