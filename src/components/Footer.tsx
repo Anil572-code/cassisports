@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -8,9 +9,13 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 bg-brand-orange rounded-lg flex items-center justify-center text-white font-black text-sm">
-                CS
-              </div>
+              <Image
+                src="/logo.png"
+                alt="Cassi Sports logo"
+                width={44}
+                height={44}
+                className="w-11 h-11 object-contain"
+              />
               <div className="flex flex-col leading-tight">
                 <span className="font-black text-white text-base tracking-tight">
                   CASSI <span className="text-brand-orange">SPORTS</span>

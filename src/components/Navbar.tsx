@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -41,9 +42,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 bg-brand-orange rounded-lg flex items-center justify-center text-white font-black text-sm">
-              CS
-            </div>
+            <Image
+              src="/logo.png"
+              alt="Cassi Sports logo"
+              width={44}
+              height={44}
+              className="w-11 h-11 object-contain"
+              priority
+            />
             <div className="flex flex-col leading-tight">
               <span className="font-black text-gray-900 text-base tracking-tight">
                 CASSI <span className="text-brand-orange">SPORTS</span>

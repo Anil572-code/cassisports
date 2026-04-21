@@ -32,6 +32,10 @@ export const metadata: Metadata = {
     "carrom",
     "sports center",
   ],
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -51,4 +55,3 @@ export default function RootLayout({
     </html>
   );
 }
-

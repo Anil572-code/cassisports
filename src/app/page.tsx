@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import FacilityCard, { FacilityCardProps } from "@/components/FacilityCard";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -178,6 +179,18 @@ export default function HomePage() {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-32">
+          <div className="flex justify-center mb-6">
+            <div className="rounded-2xl bg-white/10 border border-white/10 p-3 shadow-lg shadow-black/20">
+              <Image
+                src="/logo.png"
+                alt="Cassi Sports logo"
+                width={140}
+                height={140}
+                className="w-20 sm:w-24 h-auto object-contain"
+                priority
+              />
+            </div>
+          </div>
           <div className="inline-flex items-center gap-2 bg-brand-orange/20 border border-brand-orange/30 rounded-full px-4 py-2 mb-8">
             <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse" />
             <span className="text-brand-orange text-sm font-semibold tracking-wide uppercase">
