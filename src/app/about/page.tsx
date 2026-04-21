@@ -270,15 +270,15 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-brand-orange font-bold rounded-lg transition-all duration-300 hover:bg-orange-50"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-brand-orange font-bold rounded-lg transition-all duration-300 hover:bg-orange-50 w-full sm:w-auto"
             >
-              Get in Touch
+              Contact Us
             </Link>
             <Link
               href="/facilities"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg transition-all duration-300 hover:bg-white/10"
+              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg transition-all duration-300 hover:bg-white/10 w-full sm:w-auto"
             >
-              View Facilities
+              Book Now
             </Link>
           </div>
         </div>

@@ -31,13 +31,19 @@ export default function Footer() {
               world-class lounge under one roof.
             </p>
             <div className="flex gap-3">
-              {["f", "in", "ig", "yt"].map((icon) => (
+              {[
+                { label: "Facebook", href: "https://www.facebook.com/cassisports", icon: "f" },
+                { label: "LinkedIn", href: "https://www.linkedin.com/company/cassisports", icon: "in" },
+                { label: "Instagram", href: "https://www.instagram.com/cassisports", icon: "ig" },
+                { label: "YouTube", href: "https://www.youtube.com/@cassisports", icon: "yt" },
+              ].map((link) => (
                 <a
-                  key={icon}
-                  href="#"
+                  key={link.label}
+                  href={link.href}
+                  aria-label={link.label}
                   className="w-9 h-9 rounded-full bg-gray-700 hover:bg-brand-orange flex items-center justify-center text-xs font-bold text-gray-300 hover:text-white transition-all duration-200"
                 >
-                  {icon}
+                  {link.icon}
                 </a>
               ))}
             </div>
@@ -49,13 +55,13 @@ export default function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-2.5">
-              {[
-                { href: "/", label: "Home" },
-                { href: "/facilities", label: "Facilities" },
-                { href: "/lounge", label: "Lounge & Bar" },
-                { href: "/about", label: "About Us" },
-                { href: "/contact", label: "Contact Us" },
-              ].map((link) => (
+                {[
+                  { href: "/", label: "Home" },
+                  { href: "/facilities", label: "Facilities" },
+                  { href: "/lounge", label: "Lounge & Bar" },
+                  { href: "/about", label: "About" },
+                  { href: "/contact", label: "Contact" },
+                ].map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -112,7 +118,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-gray-300 text-sm">Cassi Sports Complex</p>
-                  <p className="text-gray-500 text-xs mt-0.5">Premium Indoor Sports Venue</p>
+                  <p className="text-gray-500 text-xs mt-0.5">21 Arena Drive, Baner, Pune 411045</p>
                 </div>
               </li>
               <li className="flex items-center gap-3">
@@ -121,8 +127,8 @@ export default function Footer() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
-                <a href="tel:+919999999999" className="text-gray-300 hover:text-brand-teal text-sm transition-colors">
-                  +91 99999 99999
+                <a href="tel:+919123456789" className="text-gray-300 hover:text-brand-teal text-sm transition-colors">
+                  +91 91234 56789
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -156,11 +162,11 @@ export default function Footer() {
               © {new Date().getFullYear()} Cassi Sports &amp; Recreational Center Pvt. Ltd. All rights reserved.
             </p>
             <div className="flex items-center gap-4">
-              <a href="#" className="text-gray-500 hover:text-brand-orange text-xs transition-colors">Privacy Policy</a>
+              <a href="https://cassisports.com/privacy-policy" className="text-gray-500 hover:text-brand-orange text-xs transition-colors">Privacy Policy</a>
               <span className="text-gray-700">•</span>
-              <a href="#" className="text-gray-500 hover:text-brand-orange text-xs transition-colors">Terms of Service</a>
+              <a href="https://cassisports.com/terms-of-service" className="text-gray-500 hover:text-brand-orange text-xs transition-colors">Terms of Service</a>
               <span className="text-gray-700">•</span>
-              <a href="#" className="text-gray-500 hover:text-brand-orange text-xs transition-colors">Sitemap</a>
+              <a href="https://cassisports.com/sitemap" className="text-gray-500 hover:text-brand-orange text-xs transition-colors">Sitemap</a>
             </div>
           </div>
         </div>

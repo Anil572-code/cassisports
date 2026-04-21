@@ -20,7 +20,11 @@ export default function FacilityCard({
   return (
     <article className="bg-white rounded-2xl overflow-hidden shadow-md card-hover group border border-gray-100 flex flex-col h-full">
       {/* Image Placeholder */}
-      <div className={`relative h-48 ${gradient} flex items-center justify-center overflow-hidden`}>
+      <div
+        className={`relative h-48 ${gradient} flex items-center justify-center overflow-hidden`}
+        data-placeholder="facility-image"
+        aria-label={`${title} image placeholder`}
+      >
         <span className="text-6xl filter drop-shadow-lg group-hover:scale-110 transition-transform duration-300">
           {emoji}
         </span>
